@@ -16,8 +16,8 @@
 ---
 
 ### Tech Stack:
-- **Facial Recognition**: Using cutting-edge face detection algorithms.
-- **Streamlit**: Interactive and sleek user interface for seamless experience.
+- **Facial Recognition**: lib
+- **Streamlit**: streamlit for frontend 
 - **Custom Models**: Pre-trained models for facial recognition, fine-tuned for custom image sets.
 
 Feel free to explore the code and give suggestions for improvement! Your feedback is always appreciated.
