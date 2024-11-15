@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 model_s = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5s.pt', force_reload=True)   
 #model_m = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5m.pt', force_reload=True)
 #model_l = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5l.pt', force_reload=True) 
-model_x = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5x.pt', force_reload=True) 
+model_x = torch.hub.load('ultralytics/yolov5', 'custom', path='yolov5x.pt', force_reload=True) # it was large so i didnt add it dowload it and then use it ya self
 
 def detect_animals(image_path, model):
     img = cv2.imread(image_path)
@@ -24,4 +24,4 @@ def detect_animals(image_path, model):
 
     cv2.imwrite('res2.png', img_bgr)
 
-detect_animals('test3.png', model_x)
+detect_animals('test3.png', model_s)
