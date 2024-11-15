@@ -9,7 +9,7 @@ import os
 import tempfile
 
 # Default model path
-default_model_path = "face_encodings_model.pkl"
+default_model_path = "updated_model0.pkl"
 
 # Load the model from a given path
 def load_model(model_path):
@@ -29,7 +29,7 @@ def recognize_faces_in_image(image, known_face_encodings, known_face_names):
     for face_encoding in face_encodings:
         matches = face_recognition.compare_faces(known_face_encodings, face_encoding)
         name = "Unknown"
-        color = (0, 102, 255)  # Blue for unknown
+        color = (255, 0, 0)  # red for unknown
 
         if True in matches:
             first_match_index = matches.index(True)

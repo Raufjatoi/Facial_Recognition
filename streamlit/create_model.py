@@ -6,7 +6,7 @@ import pickle
 
 # Path to the folder containing known faces
 known_faces_dir = "known_faces/"
-model_path = "updated_model.pkl"
+model_path = "updated_model0.pkl"
 
 # Initialize arrays to hold known face encodings and their corresponding names
 known_face_encodings = []
